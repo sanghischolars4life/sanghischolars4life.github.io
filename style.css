@@ -13,13 +13,13 @@ body {
 
 #journal-display {
     display: none; 
-    padding: 20px; 
+    padding: 5px; 
     background-color: white; 
     border: 1px solid black; 
     margin-top: 20px;
     position: absolute;
-    left: 50px;
-    right: 50px;
+    left: 20px;
+    right: 20px;
     top: 100px;
 }
 
