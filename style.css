@@ -1,0 +1,119 @@
+body {
+    background-color: pink;
+    background-image: url('images/heart.png');
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Ensure no scrollbars */
+    position: relative;
+}
+
+/* .hearts {
+    color: red;
+    font-size: 30px;
+    position: absolute;
+} */
+/* {
+.heart1 { top: 5%; left: 5%; }
+.heart2 { top: 5%; left: 15%; }
+.heart3 { top: 5%; left: 25%; }
+.heart4 { top: 5%; left: 35%; }
+.heart5 { top: 5%; left: 45%; }
+.heart6 { top: 5%; left: 55%; }
+.heart7 { top: 5%; left: 65%; }
+.heart8 { top: 5%; left: 75%; }
+.heart9 { top: 5%; left: 85%; }
+
+.heart10 { top: 15%; left: 5%; }
+.heart11 { top: 15%; left: 15%; }
+.heart12 { top: 15%; left: 25%; }
+.heart13 { top: 15%; left: 35%; }
+.heart14 { top: 15%; left: 45%; }
+.heart15 { top: 15%; left: 55%; }
+.heart16 { top: 15%; left: 65%; }
+.heart17 { top: 15%; left: 75%; }
+.heart18 { top: 15%; left: 85%; }
+
+.heart19 { top: 25%; left: 5%; }
+.heart20 { top: 25%; left: 15%; }
+.heart21 { top: 25%; left: 25%; }
+.heart22 { top: 25%; left: 35%; }
+.heart23 { top: 25%; left: 45%; }
+.heart24 { top: 25%; left: 55%; }
+.heart25 { top: 25%; left: 65%; }
+.heart26 { top: 25%; left: 75%; }
+.heart27 { top: 25%; left: 85%; }
+
+.heart28 { top: 35%; left: 5%; }
+.heart29 { top: 35%; left: 15%; }
+.heart30 { top: 35%; left: 25%; }
+.heart31 { top: 35%; left: 35%; }
+.heart32 { top: 35%; left: 45%; }
+.heart33 { top: 35%; left: 55%; }
+.heart34 { top: 35%; left: 65%; }
+.heart35 { top: 35%; left: 75%; }
+.heart36 { top: 35%; left: 85%; }
+
+.heart37 { top: 45%; left: 5%; }
+.heart38 { top: 45%; left: 15%; }
+.heart39 { top: 45%; left: 25%; }
+.heart40 { top: 45%; left: 35%; }
+.heart41 { top: 45%; left: 45%; }
+.heart42 { top: 45%; left: 55%; }
+.heart43 { top: 45%; left: 65%; }
+.heart44 { top: 45%; left: 75%; }
+.heart45 { top: 45%; left: 85%; }
+
+.heart46 { top: 55%; left: 5%; }
+.heart47 { top: 55%; left: 15%; }
+.heart48 { top: 55%; left: 25%; }
+.heart49 { top: 55%; left: 35%; }
+.heart50 { top: 55%; left: 45%; }
+.heart51 { top: 55%; left: 55%; }
+.heart52 { top: 55%; left: 65%; }
+.heart53 { top: 55%; left: 75%; }
+.heart54 { top: 55%; left: 85%; }
+
+.heart55 { top: 65%; left: 5%; }
+.heart56 { top: 65%; left: 15%; }
+.heart57 { top: 65%; left: 25%; }
+.heart58 { top: 65%; left: 35%; }
+.heart59 { top: 65%; left: 45%; }
+.heart60 { top: 65%; left: 55%; }
+.heart61 { top: 65%; left: 65%; }
+.heart62 { top: 65%; left: 75%; }
+.heart63 { top: 65%; left: 85%; }
+
+.heart64 { top: 75%; left: 5%; }
+.heart65 { top: 75%; left: 15%; }
+.heart66 { top: 75%; left: 25%; }
+.heart67 { top: 75%; left: 35%; }
+.heart68 { top: 75%; left: 45%; }
+.heart69 { top: 75%; left: 55%; }
+.heart70 { top: 75%; left: 65%; }
+.heart71 { top: 75%; left: 75%; }
+.heart72 { top: 75%; left: 85%; }
+
+.heart73 { top: 85%; left: 5%; }
+.heart74 { top: 85%; left: 15%; }
+.heart75 { top: 85%; left: 25%; }
+.heart76 { top: 85%; left: 35%; }
+.heart77 { top: 85%; left: 45%; }
+.heart78 { top: 85%; left: 55%; }
+.heart79 { top: 85%; left: 65%; }
+.heart80 { top: 85%; left: 75%; }
+.heart81 { top: 85%; left: 85%; }
+
+.heart82 { top: 95%; left: 5%; }
+.heart83 { top: 95%; left: 15%; }
+.heart84 { top: 95%; left: 25%; }
+.heart85 { top: 95%; left: 35%; }
+.heart86 { top: 95%; left: 45%; }
+.heart87 { top: 95%; left: 55%; }
+.heart88 { top: 95%; left: 65%; }
+.heart89 { top: 95%; left: 75%; }
+.heart90 { top: 95%; left: 85%; }
+} */
