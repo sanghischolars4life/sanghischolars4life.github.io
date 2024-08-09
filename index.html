@@ -17,15 +17,16 @@
         <div id="initial-container">            
             <button id="press-button">Missing me? Click Here!</button>
         </div>
-         <!-- Note form -->
-        <div id="note-container">
-            <textarea id="note-input" placeholder="Write what you are feeling!"></textarea>
-            <button id="save-note-button">Save Note</button>
-        </div>
+      
         <!-- View Journal button -->
-        <button id="view-journal-button" style="position: absolute; top: 10px; right: 100px;">View Journal</button>
-        <!-- <button id="download-journal-button" style="position: absolute; top: 10px; right: 10px;">Download Journal</button> -->
-    </div>
+        <button id="view-journal-button" style="position: absolute; top: 10px; right: 10px;">View Journal</button>
+
+        <!-- Journal Display Area -->
+        <div id="journal-display" style="display: none; padding: 20px; background-color: white; border: 1px solid black; margin-top: 20px;">
+            <h3>Journal for Today</h3>
+            <pre id="journal-content"></pre>
+        </div>
+  
     </div>
 
     <script src="script.js"></script>
