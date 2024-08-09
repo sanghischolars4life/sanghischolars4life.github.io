@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const imageContainer = document.getElementById("image-container");
     const loveImage = document.getElementById("love-image");
 
+    const saveNoteButton = document.getElementById("save-note-button");
+    const noteInput = document.getElementById("note-input");
+    const viewJournalButton = document.getElementById("view-journal-button");
+    const downloadJournalButton = document.getElementById("download-journal-button");
+
     // Array of image paths
     const imageArray = [
         "images/img0.jpg", // First image shown when the PRESS button is clicked
@@ -16,6 +21,14 @@ document.addEventListener("DOMContentLoaded", function() {
         "images/img5.jpg",
         "images/img6.jpg"
     ];
+
+    const complArray = [
+        "You are so pretty", // First image shown when the PRESS button is clicked
+        "You are so beautiful", 
+        "You are kind",
+        "You are sweet"
+    ];
+
 
     // Function to shuffle the array
     function shuffleArray(array) {
@@ -32,26 +45,85 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
     imageContainer.style.display = "none";
 
-    // Handle the PRESS button click
+    // Handle PRESS button click
     pressButton.addEventListener("click", function() {
         initialContainer.style.display = "none";
         imageContainer.style.display = "block";
-        loveImage.src = imageArray[currentIndex+1];
+        loveImage.src = imageArray[currentIndex];
         currentIndex = (currentIndex + 1) % imageArray.length;
     });
 
-    // Handle the Need More Love button click
+    // Handle Need More Love button click
     needMoreLoveButton.addEventListener("click", function() {
         if (currentIndex === 0) {
-            shuffleArray(imageArray);
+            shuffleArray(imageArray);  // Reshuffle when all images have been shown
         }
         loveImage.src = imageArray[currentIndex];
         currentIndex = (currentIndex + 1) % imageArray.length;
     });
 
-    // Handle the Home button click
+    // Handle Home button click
     homeButton.addEventListener("click", function() {
         imageContainer.style.display = "none";
         initialContainer.style.display = "block";
     });
+    
+
+   // Handle Save Note button click
+   saveNoteButton.addEventListener("click", function() {
+    const note = noteInput.value;
+    if (note) {
+        let journal = localStorage.getItem('journal');
+        if (!journal) {
+            journal = [];
+        } else {
+            journal = JSON.parse(journal);
+        }
+        journal.push(note);
+        localStorage.setItem('journal', JSON.stringify(journal));
+        alert('Note saved successfully');
+        noteInput.value = ''; // Clear the input after saving
+    } else {
+        alert('Please write something in the note.');
+    }
+});
+
+    // Handle View Journal button click
+    viewJournalButton.addEventListener("click", function() {
+        let journal = localStorage.getItem('journal');
+        if (!journal) {
+            alert('Your journal is empty.');
+        } else {
+            journal = JSON.parse(journal);
+            const journalText = journal.join('\n\n');
+            alert(`Journal:\n\n${journalText}`);
+        }
+    });
+
+    // Handle Download Journal button click
+    downloadJournalButton.addEventListener("click", function() {
+        let journal = localStorage.getItem('journal');
+        if (!journal) {
+            alert('Your journal is empty.');
+        } else {
+            journal = JSON.parse(journal);
+            const journalText = journal.join('\n\n');
+            download('Journal.txt', journalText);
+        }
+    });
+
+    // Function to trigger download
+    function download(filename, text) {
+        const element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+        element.setAttribute('download', filename);
+
+        element.style.display = 'none';
+        document.body.appendChild(element);
+
+        element.click();
+
+        document.body.removeChild(element);
+    }
+
 });
