@@ -6,10 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const imageContainer = document.getElementById("image-container");
     const loveImage = document.getElementById("love-image");
 
-    const viewJournalButton = document.getElementById("view-journal-button");
     const playMusicButton = document.getElementById("play-music-button");
-    const journalDisplay = document.getElementById("journal-display");
-    const journalContent = document.getElementById("journal-content");
 
     const backgroundMusic = document.getElementById("background-music");
     let isMusicPlaying = false;
@@ -20,15 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let i = 0; i <= 50; i++) {
         imageArray.push(`images/img${i}.jpg`);
     }
-
-
-    const complArray = [
-        "You are so pretty", // First image shown when the PRESS button is clicked
-        "You are so beautiful", 
-        "You are kind",
-        "You are sweet"
-    ];
-
 
     // Function to shuffle the array
     function shuffleArray(array) {
@@ -45,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
     imageContainer.style.display = "none";
 
-     // Handle PRESS button click
-     pressButton.addEventListener("click", function() {
+    // Handle PRESS button click
+    pressButton.addEventListener("click", function() {
         initialContainer.style.display = "none";
         imageContainer.style.display = "block";
         loveImage.src = imageArray[currentIndex];
@@ -66,10 +54,8 @@ document.addEventListener("DOMContentLoaded", function() {
     homeButton.addEventListener("click", function() {
         imageContainer.style.display = "none";
         initialContainer.style.display = "block";
-        journalDisplay.style.display = "none"
     });
 
-    
     playMusicButton.addEventListener("click", function() {
         if (isMusicPlaying) {
             backgroundMusic.pause();
@@ -79,14 +65,5 @@ document.addEventListener("DOMContentLoaded", function() {
             playMusicButton.textContent = "Pause Music";
         }
         isMusicPlaying = !isMusicPlaying;
-    });
-    // Handle View Journal button click
-    viewJournalButton.addEventListener("click", function() {
-        data = "Have a safe flight! \n I am going to start to Seattle as your flight takes off.\n" +
-        "Today will be very important day for us! I am super proud of you and extremely thrilled for the journey ahead of us.\n" +
-        "Last few days I was distracted with HY work, but deep down I felt I would breakdown otherwise.\nI just got time to rethink and realize this is a journey for both of us to grow and spread our wings to the maximum.\n" +
-        "Love you so much! I am always there! Focus on your health and being more and more aware!"
-        journalContent.textContent = data;
-        journalDisplay.style.display = "block";
     });
 });
