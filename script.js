@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Array of image paths
     const imageArray = [];
 
-    for (let i = 0; i <= 50; i++) {
+    for (let i = 0; i <= 104; i++) {
         imageArray.push(`images/img${i}.jpg`);
     }
 
