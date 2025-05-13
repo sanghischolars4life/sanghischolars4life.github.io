@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const needMoreLoveButton = document.getElementById("need-more-love-button");
     const homeButton = document.getElementById("home-button");
     const initialContainer = document.getElementById("initial-container");
+    const bdayContainer = document.getElementById("bday-container");
+
     const imageContainer = document.getElementById("image-container");
     const loveImage = document.getElementById("love-image");
 
@@ -36,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Handle PRESS button click
     pressButton.addEventListener("click", function() {
         initialContainer.style.display = "none";
+        bdayContainer.style.display = "none";
         imageContainer.style.display = "block";
         loveImage.src = imageArray[currentIndex];
         currentIndex = (currentIndex + 1) % imageArray.length;
