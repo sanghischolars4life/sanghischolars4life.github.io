@@ -1,0 +1,54 @@
+[
+  {
+    "base": [
+      { "x": 18, "y": 22, "size": 36, "color": "#d4a84b" },
+      { "x": 72, "y": 28, "size": 42, "color": "#7eb6ff" },
+      { "x": 45, "y": 55, "size": 32, "color": "#e88a9a" },
+      { "x": 28, "y": 78, "size": 38, "color": "#8fd4a0" },
+      { "x": 68, "y": 72, "size": 34, "color": "#c9a0ff" },
+      { "x": 52, "y": 35, "size": 28, "color": "#ffb86c" },
+      { "x": 82, "y": 48, "size": 30, "color": "#6ee7d8" },
+      { "x": 15, "y": 52, "size": 26, "color": "#f0e68c" }
+    ],
+    "extra": [
+      { "x": 58, "y": 68, "size": 32, "color": "#ff6b8a" },
+      { "x": 38, "y": 18, "size": 28, "color": "#5ecfff" },
+      { "x": 88, "y": 82, "size": 30, "color": "#b8ff6e" }
+    ]
+  },
+  {
+    "base": [
+      { "x": 25, "y": 30, "size": 40, "color": "#7eb6ff" },
+      { "x": 60, "y": 25, "size": 34, "color": "#d4a84b" },
+      { "x": 40, "y": 60, "size": 44, "color": "#e88a9a" },
+      { "x": 75, "y": 55, "size": 30, "color": "#8fd4a0" },
+      { "x": 20, "y": 70, "size": 36, "color": "#c9a0ff" },
+      { "x": 55, "y": 82, "size": 28, "color": "#ffb86c" },
+      { "x": 85, "y": 35, "size": 32, "color": "#6ee7d8" }
+    ],
+    "extra": [
+      { "x": 48, "y": 42, "size": 26, "color": "#ff9f43" },
+      { "x": 12, "y": 38, "size": 30, "color": "#a29bfe" },
+      { "x": 70, "y": 78, "size": 28, "color": "#55efc4" },
+      { "x": 32, "y": 88, "size": 24, "color": "#fd79a8" }
+    ]
+  },
+  {
+    "base": [
+      { "x": 30, "y": 20, "size": 38, "color": "#d4a84b" },
+      { "x": 65, "y": 40, "size": 42, "color": "#7eb6ff" },
+      { "x": 22, "y": 55, "size": 32, "color": "#8fd4a0" },
+      { "x": 50, "y": 75, "size": 36, "color": "#e88a9a" },
+      { "x": 78, "y": 65, "size": 30, "color": "#c9a0ff" },
+      { "x": 42, "y": 45, "size": 26, "color": "#ffb86c" },
+      { "x": 88, "y": 22, "size": 28, "color": "#6ee7d8" },
+      { "x": 15, "y": 82, "size": 34, "color": "#f0e68c" },
+      { "x": 58, "y": 58, "size": 30, "color": "#ff6b8a" }
+    ],
+    "extra": [
+      { "x": 72, "y": 38, "size": 28, "color": "#5ecfff" },
+      { "x": 35, "y": 68, "size": 32, "color": "#b8ff6e" },
+      { "x": 62, "y": 15, "size": 26, "color": "#a29bfe" }
+    ]
+  }
+]

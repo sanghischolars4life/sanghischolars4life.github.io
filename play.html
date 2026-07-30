@@ -19,13 +19,14 @@
     </nav>
   </header>
 
-  <main class="page">
+  <main class="page page-wide">
     <h1 class="page-title">Play</h1>
     <p class="page-lead">
-      Three little games for Anjali &amp; Vivek. Scores stay on this device for now —
-      sync rooms can come later.
+      Games for Anjali &amp; Vivek — hot-seat together on one device.
+      Scores stay here for now; sync rooms can come later.
     </p>
 
+    <h2 class="game-section-title">Favorites</h2>
     <div class="game-list">
       <a class="game-link" href="games/memory-match.html">
         <h2>Memory Match</h2>
@@ -43,6 +44,68 @@
         <span class="meta" id="meta-quiz">Best score: —</span>
       </a>
     </div>
+
+    <h2 class="game-section-title">New board &amp; table</h2>
+    <div class="game-list">
+      <a class="game-link" href="games/monopoly.html">
+        <h2>Monopoly Lite</h2>
+        <p>Hot-seat dice, buy, and rent on a short Pandu vs Pando board.</p>
+        <span class="meta">2 players · local</span>
+      </a>
+      <a class="game-link" href="games/connect-four.html">
+        <h2>Connect Four</h2>
+        <p>Drop discs — first to four in a row wins.</p>
+        <span class="meta">2 players · local</span>
+      </a>
+      <a class="game-link" href="games/tic-tac-toe.html">
+        <h2>Tic-Tac-Toe</h2>
+        <p>Classic three-in-a-row for quick rounds.</p>
+        <span class="meta">2 players · local</span>
+      </a>
+      <a class="game-link" href="games/dots-boxes.html">
+        <h2>Dots &amp; Boxes</h2>
+        <p>Claim lines, close boxes, keep score.</p>
+        <span class="meta">2 players · local</span>
+      </a>
+      <a class="game-link" href="games/checkers.html">
+        <h2>Checkers</h2>
+        <p>Jump, crown, and clear the board.</p>
+        <span class="meta">2 players · local</span>
+      </a>
+    </div>
+
+    <h2 class="game-section-title">Photos &amp; words</h2>
+    <div class="game-list">
+      <a class="game-link" href="games/jigsaw.html">
+        <h2>Jigsaw</h2>
+        <p>Drag pieces of us back into place.</p>
+        <span class="meta">1–2 players</span>
+      </a>
+      <a class="game-link" href="games/spot-difference.html">
+        <h2>Spot the Difference</h2>
+        <p>Find the extra colored circles between the two panels.</p>
+        <span class="meta">Co-op on one screen</span>
+      </a>
+      <a class="game-link" href="games/hangman.html">
+        <h2>Hangman</h2>
+        <p>Guess the word — our places, nicknames, and inside jokes.</p>
+        <span class="meta">Take turns guessing</span>
+      </a>
+      <a class="game-link" href="games/would-you-rather.html">
+        <h2>Would You Rather</h2>
+        <p>Pick a side and talk it out — Pandu vs Pando edition.</p>
+        <span class="meta">Conversation deck</span>
+      </a>
+    </div>
+
+    <h2 class="game-section-title">Arcade</h2>
+    <div class="game-list">
+      <a class="game-link" href="games/snake.html">
+        <h2>Snake</h2>
+        <p>A tiny arcade break between calls.</p>
+        <span class="meta" id="meta-snake">Best score: —</span>
+      </a>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -56,9 +119,11 @@
       const match = localStorage.getItem("ldr_match_best");
       const puzzle = localStorage.getItem("ldr_puzzle_best");
       const quiz = localStorage.getItem("ldr_quiz_best");
+      const snake = localStorage.getItem("ldr_snake_best");
       if (match) document.getElementById("meta-match").textContent = `Best moves: ${match}`;
       if (puzzle) document.getElementById("meta-puzzle").textContent = `Best time: ${puzzle}s`;
       if (quiz) document.getElementById("meta-quiz").textContent = `Best score: ${quiz}`;
+      if (snake) document.getElementById("meta-snake").textContent = `Best score: ${snake}`;
     });
   </script>
 </body>
