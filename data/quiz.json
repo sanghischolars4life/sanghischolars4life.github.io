@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What do Anjali & Vivek also call each other?",
+    "options": ["Pandu & Pando", "Moon & Star", "Alpha & Omega", "Kit & Kaboodle"],
+    "answer": 0
+  },
+  {
+    "question": "Whose birthday archive lives on this site?",
+    "options": ["Vivek's", "Anjali's", "Both on the same day", "Pando's dog"],
+    "answer": 1
+  },
+  {
+    "question": "Which song was on the old site's soundtrack?",
+    "options": ["Inkem Inkem", "Tum Hi Ho", "Perfect", "Raabta"],
+    "answer": 0
+  },
+  {
+    "question": "If Pandu says \"Need more love,\" what should Pando do?",
+    "options": [
+      "Send another photo from the shuffle",
+      "Hang up immediately",
+      "Start a spreadsheet",
+      "Ignore the message for three days"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "This little world is mainly for…",
+    "options": [
+      "The whole internet",
+      "Anjali & Vivek — Pandu & Pando",
+      "Classmates only",
+      "Future roommates"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What's a good next door after Memories?",
+    "options": ["Play a puzzle together", "Delete the site", "Argue about timezone math", "Rewrite the passphrase daily"],
+    "answer": 0
+  }
+]

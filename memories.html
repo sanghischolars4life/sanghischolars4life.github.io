@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Memories — Anjali & Vivek</title>
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body data-page="memories">
+  <header class="site-header">
+    <a class="brand-mark" href="index.html">Anjali <span>&amp;</span> Vivek</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="memories.html" data-nav="memories">Memories</a></li>
+        <li><a href="play.html" data-nav="play">Play</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1 class="page-title">Memories</h1>
+    <p class="page-lead">
+      Moments for Pandu &amp; Pando — edit the captions anytime in
+      <code>data/memories.json</code>.
+    </p>
+
+    <section class="timeline" id="timeline" aria-label="Memory timeline"></section>
+
+    <section class="gallery-strip" aria-label="Photo shuffle">
+      <h2>Shuffle through us</h2>
+      <p class="page-lead" style="margin-bottom: 1rem">
+        Same love-stack energy as the old site — one more photo whenever you miss each other.
+      </p>
+      <div class="gallery-controls">
+        <button type="button" class="btn" id="next-photo">Need more love</button>
+        <span class="meta" id="gallery-count" style="color: rgba(243,239,230,0.55)"></span>
+      </div>
+      <div class="gallery-stage">
+        <img id="gallery-image" src="images/img0.jpg" alt="A shared memory photo" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Pandu &amp; Pando ·
+    <a href="archive/2025-birthday/index.html">Old site</a>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/memories.js"></script>
+</body>
+</html>

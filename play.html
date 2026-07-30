@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Play — Pandu & Pando</title>
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body data-page="play">
+  <header class="site-header">
+    <a class="brand-mark" href="index.html">Pandu <span>&amp;</span> Pando</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="memories.html" data-nav="memories">Memories</a></li>
+        <li><a href="play.html" data-nav="play">Play</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1 class="page-title">Play</h1>
+    <p class="page-lead">
+      Three little games for Anjali &amp; Vivek. Scores stay on this device for now —
+      sync rooms can come later.
+    </p>
+
+    <div class="game-list">
+      <a class="game-link" href="games/memory-match.html">
+        <h2>Memory Match</h2>
+        <p>Flip our photos until every pair finds its twin.</p>
+        <span class="meta" id="meta-match">Best moves: —</span>
+      </a>
+      <a class="game-link" href="games/photo-puzzle.html">
+        <h2>Photo Puzzle</h2>
+        <p>Slide the tiles until the picture comes back together.</p>
+        <span class="meta" id="meta-puzzle">Best time: —</span>
+      </a>
+      <a class="game-link" href="games/love-quiz.html">
+        <h2>Love Quiz</h2>
+        <p>How well do Pandu &amp; Pando know this little world?</p>
+        <span class="meta" id="meta-quiz">Best score: —</span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    Anjali &amp; Vivek ·
+    <a href="archive/2025-birthday/index.html">Old site</a>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const match = localStorage.getItem("ldr_match_best");
+      const puzzle = localStorage.getItem("ldr_puzzle_best");
+      const quiz = localStorage.getItem("ldr_quiz_best");
+      if (match) document.getElementById("meta-match").textContent = `Best moves: ${match}`;
+      if (puzzle) document.getElementById("meta-puzzle").textContent = `Best time: ${puzzle}s`;
+      if (quiz) document.getElementById("meta-quiz").textContent = `Best score: ${quiz}`;
+    });
+  </script>
+</body>
+</html>

@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love you Pando</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Anjali & Vivek — Our World</title>
+  <link rel="stylesheet" href="css/site.css" />
 </head>
-<body>
-    <div id="main-container">
-        <div id="initial-container">  
-            <div id="bday-container" style="max-width: 800px; margin: 40px auto; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); text-align: center;">
-            <h1 style="font-size: 3em; color: #d63384; margin-bottom: 20px;">
-                🎉 Happy 25th Birthday, Anjali! 🎉
-            </h1>
-            <p style="font-size: 1.5em; color: #333;">
-                Today we celebrate you and everything that makes you truly special.
-                The things you’ve achieved in the last 25 years are nothing short of remarkable—the lives you’ve touched, the skills you’ve mastered, the places you’ve explored, the values you’ve upheld, and the love you’ve shared.
-                
-                I love you deeply for all that you are and all that you continue to be. You are amazing, just by being you. 💛            </p>
-            <div style="margin-top: 30px;">
-                <img src="images/anjalitoy.png" alt="Anjali Birthday Image" style="max-width: auto; height: 250px; border-radius: 5px;">
-            </div>
-        </div>       
-            <button id="press-button">Missing me? Click Here!</button>
+<body class="home-body" data-page="home">
+  <main>
+    <section class="hero" id="hero" aria-label="Welcome">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-veil" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1 class="hero-brand">Anjali &amp; Vivek</h1>
+        <p class="hero-nick">Pandu &amp; Pando</p>
+        <p class="hero-line">
+          Miles apart, still here together — a little world of memories and play, just for us.
+        </p>
+        <div class="hero-cta">
+          <button type="button" class="btn" id="enter-world">Enter our world</button>
         </div>
-        
-                
-        <div id="image-container">
-            <img id="love-image" src="" alt="Love Image" height="400px">
-            <br>
-            <button id="need-more-love-button">Need more love</button>
-            <button id="home-button">Home</button>
-        </div>   
-        
-        <!-- View Journal button -->
-        <button id="view-journal-button" style="position: absolute; top: 40px; right: 10px;" onclick="window.location.href='journal.html';">View Journal</button>
+      </div>
+    </section>
 
-        <!-- Play Music button -->
-        <button id="play-music-button" style="position: absolute; top: 10px; right: 10px;">Play Music</button>
+    <section class="hub" id="hub" aria-label="Destinations" hidden>
+      <div class="hub-grid">
+        <div class="hub-intro">
+          <h2>Where to, Pandu?</h2>
+          <p>Pando left the lights on. Pick a door.</p>
+        </div>
+        <div class="destinations">
+          <a class="destination" href="memories.html">
+            <h3>Memories</h3>
+            <p>Our timeline, captions, and a shuffle through the photos that made us us.</p>
+          </a>
+          <a class="destination" href="play.html">
+            <h3>Play</h3>
+            <p>Puzzles and games for when the call ends but you still want to stay a little longer.</p>
+          </a>
+          <a class="destination full" href="archive/2025-birthday/index.html">
+            <h3>Old site</h3>
+            <p>The birthday archive — kept safe for whenever we want to visit again.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <!-- Journal Display Area -->
-        <!-- <div id="journal-display" style="display: none; padding: 20px; background-color: white; border: 1px solid black; margin-top: 20px;">
-            <h3>Journal for Today</h3>
-            <pre id="journal-content"></pre>
-        </div> -->
-  
-    </div>
-    <audio id="background-music" src="music/Inkem-Inkem.mp3" loop></audio>
-    <script src="script.js"></script>
+  <footer class="site-footer">
+    Anjali &amp; Vivek · Pandu &amp; Pando ·
+    <a href="archive/2025-birthday/index.html">Old site</a>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const enter = document.getElementById("enter-world");
+      const hub = document.getElementById("hub");
+
+      function openHub() {
+        hub.hidden = false;
+        hub.classList.add("is-open");
+        hub.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      enter.addEventListener("click", openHub);
+    });
+  </script>
 </body>
 </html>

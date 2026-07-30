@@ -1,6 +1,6 @@
 body {
     background-color: pink;
-    background-image: url('images/heart.png');
+    background-image: url('../../images/heart.png');
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;

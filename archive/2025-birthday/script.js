@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const imageArray = [];
 
     for (let i = 0; i <= 104; i++) {
-        imageArray.push(`images/img${i}.jpg`);
+        imageArray.push(`../../images/img${i}.jpg`);
     }
 
     // Function to shuffle the array

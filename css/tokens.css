@@ -1,0 +1,24 @@
+:root {
+  --ink: #1a1f3a;
+  --ink-soft: #2c3458;
+  --dusk: #1e2748;
+  --dusk-mid: #2a3560;
+  --gold: #d4a84b;
+  --gold-soft: #e8c97a;
+  --gold-dim: rgba(212, 168, 75, 0.22);
+  --cream: #f3efe6;
+  --mist: rgba(243, 239, 230, 0.82);
+  --mist-strong: rgba(243, 239, 230, 0.95);
+  --line: rgba(243, 239, 230, 0.18);
+  --shadow: 0 18px 50px rgba(10, 14, 30, 0.45);
+  --radius: 4px;
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+  --space-xs: 0.4rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3.5rem;
+  --max: 960px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

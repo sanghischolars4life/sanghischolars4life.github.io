@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Photo Puzzle — Pandu & Pando</title>
+  <link rel="stylesheet" href="../css/site.css" />
+</head>
+<body data-page="play">
+  <header class="site-header">
+    <a class="brand-mark" href="../index.html">Pandu <span>&amp;</span> Pando</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="../index.html" data-nav="home">Home</a></li>
+        <li><a href="../memories.html" data-nav="memories">Memories</a></li>
+        <li><a href="../play.html" data-nav="play">Play</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="game-shell">
+    <h1 class="page-title">Photo Puzzle</h1>
+    <p class="page-lead">Slide tiles until Anjali &amp; Vivek's photo snaps back into place.</p>
+
+    <div class="game-toolbar">
+      <div class="game-stats">
+        <span>Moves: <strong id="moves">0</strong></span>
+        <span>Time: <strong id="timer">0</strong>s</span>
+      </div>
+      <div style="display:flex; gap:0.5rem; flex-wrap:wrap">
+        <label>
+          <span class="visually-hidden" style="position:absolute;left:-9999px">Size</span>
+          <select id="size" style="padding:0.65rem 0.75rem;border-radius:4px;border:1px solid rgba(243,239,230,0.18);background:#1a1f3a;color:#f3efe6;font:inherit">
+            <option value="3">3 × 3</option>
+            <option value="4">4 × 4</option>
+          </select>
+        </label>
+        <button type="button" class="btn btn-ghost" id="new-photo">New photo</button>
+        <button type="button" class="btn btn-ghost" id="restart">Shuffle</button>
+      </div>
+    </div>
+    <p class="status-banner" id="status" aria-live="polite"></p>
+    <div class="puzzle-grid game-board" id="board" aria-label="Photo puzzle board"></div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="../play.html">Back to Play</a>
+  </footer>
+
+  <script src="../js/site.js"></script>
+  <script src="../js/games/photo-puzzle.js"></script>
+</body>
+</html>

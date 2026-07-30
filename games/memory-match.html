@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Memory Match — Anjali & Vivek</title>
+  <link rel="stylesheet" href="../css/site.css" />
+</head>
+<body data-page="play">
+  <header class="site-header">
+    <a class="brand-mark" href="../index.html">Anjali <span>&amp;</span> Vivek</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="../index.html" data-nav="home">Home</a></li>
+        <li><a href="../memories.html" data-nav="memories">Memories</a></li>
+        <li><a href="../play.html" data-nav="play">Play</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="game-shell">
+    <h1 class="page-title">Memory Match</h1>
+    <p class="page-lead">Find every pair, Pandu. Pando is cheering from the other side.</p>
+
+    <div class="game-toolbar">
+      <div class="game-stats">
+        <span>Moves: <strong id="moves">0</strong></span>
+        <span>Pairs: <strong id="pairs">0</strong>/<strong id="pair-total">6</strong></span>
+      </div>
+      <button type="button" class="btn btn-ghost" id="restart">New board</button>
+    </div>
+    <p class="status-banner" id="status" aria-live="polite"></p>
+    <div class="match-grid game-board" id="board" aria-label="Memory match board"></div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="../play.html">Back to Play</a>
+  </footer>
+
+  <script src="../js/site.js"></script>
+  <script src="../js/games/memory-match.js"></script>
+</body>
+</html>
